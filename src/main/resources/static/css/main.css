@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+
+.msg {
+  text-decoration: none;
+  font-size: 1.5em;
+  list-style: none;
+  text-align:left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.event {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2em;
+  text-align:center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealTimeChat</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.amber.min.css" />
+</head>
+
+<body>
+  <main class="container">
+
+    <div id="login">
+      <article>
+        <hgroup>
+          <h1>Welcome to RealTimeChat!</h1>
+          <p>Type your username to enter the chat</p>
+        </hgroup>
+        <form id="username-form">
+          <input id="username" type="text" placeholder="Username" autocomplete="off" required>
+          <button type="submit">Enter Chat</button>
+        </form>
+      </article>
+    </div>
+
+    <div id="chat" class="hidden">
+      <article>
+        <hgroup>
+          <h1>RealTimeChat</h1>
+          <p id="username"></p>
+        </hgroup>
+
+        <article aria-busy="true" id="loading"></article>
+
+        <ul  id="area">
+
+        </ul>
+
+        <form id="message-form">
+          <fieldset role="group">
+            <input id="message" type="text" placeholder="Type a message..." autocomplete="off" />
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </fieldset>
+        </form>
+
+      </article>
+    </div>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"
+    integrity="sha512-1QvjE7BtotQjkq8PxLeF6P46gEpBRXuskzIVgjFpekzFVF4yjRgrQvTG1MTOJ3yQgvTteKAcO7DSZI92+u/yZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"
+    integrity="sha512-iKDtgDyTHjAitUDdLljGhenhPwrbBfqTKWO1mkhSFH3A7blITC9MhYon6SjnMhp4o0rADGw9yAC6EW4t5a4K3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://kit.fontawesome.com/a41d3240c2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
