@@ -10,11 +10,11 @@
 	</parent>
 	<groupId>com.chat</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.1</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 
@@ -58,6 +58,23 @@
 					</excludes>
 				</configuration>
 			</plugin>
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>jib-maven-plugin</artifactId>
+        <version>3.2.1</version>
+        <configuration>
+            <from>
+                <image>openjdk:17-alpine</image>
+            </from>
+            <container>
+              <mainClass>com.chat.demo.DemoApplication</mainClass>
+                <ports>
+                    <port>8080</port>
+                </ports>
+                <format>OCI</format>
+            </container>
+        </configuration>
+    </plugin>
 		</plugins>
 	</build>
 
