@@ -28,7 +28,7 @@ public class WebSocketEventListener {
 
     if (username != null) {
       log.info("User Disconnected : " + username);
-      lombok.var chatMessage = ChatMessage.builder()
+      var chatMessage = ChatMessage.builder()
           .type(MessageType.LEAVE)
           .sender(username)
           .build();
