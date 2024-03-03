@@ -20,7 +20,7 @@ You will need to have installed:
 
 ### Set up:
 
-1. Clone the repository to your local machine using `git clone https://github.com/yourusername/real-time-chat.git`.
+1. Clone the repository to your local machine using `git clone https://github.com/xrimsonn/real-time-chat-spring.git`.
 
 2. Navigate to the project directory.
 
