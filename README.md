@@ -13,7 +13,7 @@ This project is a real-time chat application using WebSocket, SocketJS, PicoCSS,
 
 You will need to have installed:
 
-- Java 17
+- Java 21
 - Maven
 
 ## How to Run the Project
