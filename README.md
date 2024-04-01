@@ -26,7 +26,7 @@ You will need to have installed:
 
 3. Run the command `mvn install` to download dependencies.
 
-4. Run the Spring Boot application.
+4. Run the Spring Boot application using mvn `spring-boot:run`.
 
 The backend server should now be running and you can go to the index on http://localhost:8080.
 
